@@ -1,5 +1,5 @@
 # Game-Pathfinding-with-Astar
-This was made with Unity 2019.2.2f1 using a custom made grid-based system.
+This project was made with Unity 2019.2.2f1 using a custom made grid-based system.
 
 ## What is A* and why should I know about it?
 A* is one of the most robust and widely known searching algorithms. It uses "common sense" to find the shortest path to the goal from a starting position. It is useful in many
@@ -30,9 +30,11 @@ There are a few different ways to find the answer to this problem. We can either
     Manhattan Distance: the sum of absolute values of differences in the goal’s x and y coordinates and the current cell’s x and y coordinates
         h = abs(currentNode.x – endNode.x) + abs (currentNode.y – endNode.y);
         This should be used when the AI can only move in 4 directions.
+
     Diagonal Distance: the maximum of absolute values of differences in the goal’s x and y coordinates and the current cell’s x and y coordinates
         h = max { abs(currentNode.x – endNode.x), abs(currentNode.y – endNode.y) };
         This should be used when the AI can move omnidirectionally(8 directions). It is also the algorithm used in this project.
+
     Euclidean Distance: the distance formula
         h = sqrt ( (currentNode.x – endNode.x) ^ 2 + (currentNode.y – goal.y) ^ 2 );
         This should be used when the AI can move in any direction.
@@ -55,6 +57,7 @@ A General explanation and rundown of the A* Algorithm with code in c++
 "Introduction to Genetic Algorithms — Including Example Code" by Vijini Mallawaarachchi.
 
     https://www.redblobgames.com/pathfinding/a-star/introduction.html
+
 
 
 Thanks for reading. I hope you learned a few things for your future projects!
