@@ -1,5 +1,9 @@
 # Game-Pathfinding-with-Astar
 
+##What is A* and why should I know about it?
+A* is one of the most robust and widely known searching algorithms. It uses "common sense" to find the shortest path to the goal from a starting position. It is useful in many
+different scenarios. The scenario that I will be sharing with you will be in Video Games.
+
 ## Source Material with Extra Goodies + References
 
 The Youtube Series tutorial by Code Monkey.
