@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //This is the pathfinding class which we use to find a path from point A to B
-//Tutorial followed by Codemonkey
+//Tutorial followed by Codemonkey and modified by me
 public class Pathfinding
 {
     //constant variable for moving
@@ -104,7 +104,7 @@ public class Pathfinding
     {
         List<PathNode> neighbourList = new List<PathNode>();
 
-        if (currentNode.x - 1 >= 0)
+        if (currentNode.x - 1 >= 0 && GetNode(currentNode.x - 1, currentNode.y).isWalkable)
         {
             // Left
             neighbourList.Add(GetNode(currentNode.x - 1, currentNode.y));
@@ -120,7 +120,8 @@ public class Pathfinding
                 neighbourList.Add(GetNode(currentNode.x - 1, currentNode.y + 1));
             }
         }
-        if (currentNode.x + 1 < map.GetWidth())
+
+        if (currentNode.x + 1 < map.GetWidth() && GetNode(currentNode.x + 1, currentNode.y).isWalkable)
         {
             // Right
             neighbourList.Add(GetNode(currentNode.x + 1, currentNode.y));
@@ -138,13 +139,13 @@ public class Pathfinding
         }
 
         // Down
-        if (currentNode.y - 1 >= 0)
+        if (currentNode.y - 1 >= 0 && GetNode(currentNode.x, currentNode.y - 1).isWalkable)
         {
             neighbourList.Add(GetNode(currentNode.x, currentNode.y - 1));
         }
 
         // Up
-        if (currentNode.y + 1 < map.GetHeight())
+        if (currentNode.y + 1 < map.GetHeight() && GetNode(currentNode.x, currentNode.y + 1).isWalkable)
         {
             neighbourList.Add(GetNode(currentNode.x, currentNode.y + 1));
         }

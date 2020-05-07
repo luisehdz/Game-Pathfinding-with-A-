@@ -5,7 +5,7 @@ using UnityEngine;
 
 //This class creates a Generic Grid type that can be used for many different applications
 //This is how we place our Nodes and grab a position in worldspace
-//Tutorial followed by CodeMonkey
+//Tutorial followed by CodeMonkey and commented by me
 public class GridSystem<TGridObject>
 {
     //This is an event handler that checks to see if our grid object was changed. I.e Node

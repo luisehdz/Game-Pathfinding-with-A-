@@ -5,7 +5,7 @@ using UnityEngine;
 /*
  * This creates our basic network of nodes that we will use to traverse the map with
  * It includes our basic variables for the A* algorithm such as gCost, hCost, and fCost
- * Tutorial Followed by CodeMonkey
+ * Tutorial Followed by CodeMonkey and modified by me
  */
 public class PathNode
 {
